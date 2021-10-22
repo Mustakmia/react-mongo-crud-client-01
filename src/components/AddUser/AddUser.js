@@ -21,10 +21,10 @@ const AddUser = () => {
                 if (data.insertedId) {
                     alert('user successfully added')
                     e.target.reset();
+                    // setUser({});
                 }
-                else {
-                    alert('user not added')
-                }
+
+
             })
 
         e.preventDefault();

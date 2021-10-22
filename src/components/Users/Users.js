@@ -25,6 +25,7 @@ const Users = () => {
                         alert('deleted successfully done');
                         const remainingUsers = users.filter(user => user._id !== id);
                         setUsers(remainingUsers);
+                        // setUsers({});
                     }
                 });
         }
