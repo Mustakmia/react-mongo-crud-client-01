@@ -26,7 +26,7 @@ function App() {
               <AddUser></AddUser>
             </Route>
 
-            <Route path="/users/update/:id">
+            <Route path="/users/updateuser/add/:id">
               <UpdateUser></UpdateUser>
             </Route>
 

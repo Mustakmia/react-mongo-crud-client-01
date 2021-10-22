@@ -5,7 +5,7 @@ const UpdateUser = () => {
     const [user, setUser] = useState({ name: '', email: '' });
     const { id } = useParams();
     useEffect(() => {
-        const url = `http://localhost:4000/users/${id}`;
+        const url = `http://localhost:4000/users${id}`;
         fetch(url)
             .then(res => res.json())
             .then(data => setUser(data));
@@ -31,7 +31,7 @@ const UpdateUser = () => {
     }
 
     const handleUpdateUser = e => {
-        const url = `http://localhost:4000/users/${id}`;
+        const url = `http://localhost:4000/users${id}`;
         fetch(url, {
             method: 'PUT',
             headers: {
